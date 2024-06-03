@@ -1,3 +1,15 @@
+@charset "UTF-8";
+.global-btn, html,
+body {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: normal;
+}
+
+.title-h4, .title-h3, .title-h2, .title-h1 {
+  font-family: "Oswald-Regular", sans-serif;
+  font-weight: normal;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -70,6 +82,9 @@ a {
 html,
 body {
   height: 100%;
+  color: #747C87;
+  background-color: #F5F5F5;
+  font-size: 20px;
 }
 
 .wrapper {
@@ -95,7 +110,67 @@ body {
           flex: 0 0 auto;
 }
 
-.container {
+.container-fluid {
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 15px;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 162px;
+}
+
+.title-h1 {
+  font-size: 80px;
+}
+
+.title-h2 {
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+.title-h3 {
+  font-size: 48px;
+}
+
+.title-h4 {
+  font-size: 40px;
+}
+
+.global-btn {
+  background-color: #144C99;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  border: 1px solid #144C99;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.global-btn:hover {
+  background-color: #ffffff;
+  color: #144C99;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: local("☺"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/Oswald-Regular.eot");
+  src: local("☺"), url("../fonts/Oswald-Regular.woff") format("woff"), url("../fonts/Oswald-Regular.ttf") format("truetype"), url("../fonts/Oswald-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
