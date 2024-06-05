@@ -7,8 +7,26 @@ body {
   // position: relative;
   // overflow-x: hidden;
   // margin: 0 auto;
-  font-size: 20px;
+  font-size: 18px;
+}
+body.menu-opened{
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background-color: $white;
+  position: relative;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  // background-color: $green;
+  background: linear-gradient(170deg, rgba(212, 17, 24, 1) 0%, rgba(20, 76, 153, 1) 100%);
+  border-radius: 5px;
+  border: 1px solid $dark-blue;
 }
 
 .wrapper {
@@ -73,9 +91,17 @@ body {
   font-size: 16px;
   border: 1px solid $blue;
   transition: all .3s;
+  max-width: fit-content;
+  cursor: pointer;
 
   &:hover {
     background-color: $white;
     color: $blue;
   }
 }
+
+
+
+
+
+
