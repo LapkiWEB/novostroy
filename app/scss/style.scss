@@ -296,6 +296,55 @@
 
 // end section main-onescreen
 
+// start section main-services
+.main-services__title{
+  color: $blue;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.main-services__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-services__item {
+  width: 25%;
+  // max-width: 481px;
+  // width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
+  background-size: 100% 100%;
+  &:hover{
+    background-size: 110% 110%;
+  }
+}
+
+.main-services__item-bg {
+  background: rgba(25, 43, 68, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.main-services__item-title {
+  margin: 0 auto;
+  max-width: 360px;
+  width: 100%;
+  color: $white;
+}
+
+.main-services__item-btn {
+  margin: 0 auto;
+
+}
+
+// end section main-services
+
 
 
 
