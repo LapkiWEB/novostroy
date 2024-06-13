@@ -348,9 +348,10 @@
 // end section main-services
 
 // start section main-portfolio
-.main-portfolio-title{
+.main-portfolio-title {
   color: $red;
 }
+
 .main-portfolio__inner {
   margin-bottom: 50px;
 
@@ -414,6 +415,69 @@
 }
 
 // end section main-portfolio
+
+
+// start section adv
+.adv{
+  padding-bottom: 50px;
+}
+.adv__title {
+  // margin-bottom: 250px;
+}
+
+.adv__inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.adv__item {
+  background: linear-gradient(180deg, #fff 100%, rgba(255, 255, 255, 0) 100%);
+  padding: 30px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin: 0 10px;
+  margin-top: 220px;
+  position: relative;
+
+  // z-index: 1000;
+  &::before {
+    content: '';
+    width: 347px;
+    height: 347px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/icons/adv-bg.png');
+  }
+}
+
+.adv__item-logo {
+  width: 87px;
+  height: 87px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.adv__item-title {
+  color: $red;
+  margin-bottom: 40px;
+}
+
+// end section adv
 
 
 
