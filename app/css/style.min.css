@@ -5,7 +5,7 @@ body {
   font-weight: normal;
 }
 
-.team__content-subtitle, .title-h4, .title-h3, .title-h2, .title-h1 {
+.main-stages__item--number, .team__content-subtitle, .title-h4, .title-h3, .title-h2, .title-h1 {
   font-family: "Oswald-Regular", sans-serif;
   font-weight: normal;
 }
@@ -795,6 +795,78 @@ body.menu-opened {
   background-position: top;
 }
 
+.main-stages__title {
+  color: #144c99;
+  margin-bottom: 50px;
+}
+
+.main-stages__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main-stages__item {
+  width: 440px;
+  height: 400px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+  padding: 80px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.main-stages__item:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #fff 100%, rgba(255, 255, 255, 0) 100%);
+}
+.main-stages__item:hover .main-stages__item-text {
+  opacity: 1;
+}
+.main-stages__item:hover .main-stages__item--number {
+  opacity: 0;
+}
+
+.main-stages__item-title {
+  color: rgb(212, 17, 24);
+}
+
+.main-stages__item-text {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.main-stages__item--number {
+  font-size: 180px;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(hsla(0, 0%, 100%, 0)));
+  background: linear-gradient(180deg, #fff 0%, hsla(0, 0%, 100%, 0) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
 @media (max-width: 1800px) {
   .nav {
     display: none;
@@ -868,6 +940,12 @@ body.menu-opened {
     margin: 0 30px;
   }
 }
+@media (max-width: 1700px) {
+  .main-stages__item {
+    width: 400px;
+    height: 350px;
+  }
+}
 @media (max-width: 1600px) {
   .header {
     padding: 10px 0;
@@ -899,6 +977,17 @@ body.menu-opened {
   .main-portfolio__item-content {
     padding-left: 120px;
     width: 50%;
+  }
+}
+@media (max-width: 1500px) {
+  .main-stages__inner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main-stages__item {
+    width: 450px;
+    height: 400px;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 1400px) {
@@ -1033,6 +1122,13 @@ body.menu-opened {
     height: 300px;
     top: 0;
   }
+  .main-stages__item {
+    width: 350px;
+    height: 300px;
+  }
+  .main-stages__item--number {
+    font-size: 140px;
+  }
 }
 @media (max-width: 1000px) {
   .adv__item-title {
@@ -1065,6 +1161,26 @@ body.menu-opened {
   }
   .team__content {
     padding-right: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .main-stages__item-title {
+    text-align: center;
+  }
+  .main-stages__item {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+  }
+  .main-stages__item:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  .main-stages__item-text {
+    opacity: 1;
+  }
+  .main-stages__item--number {
+    display: none;
   }
 }
 @media (max-width: 850px) {
@@ -1135,6 +1251,20 @@ body.menu-opened {
   }
   .team__photo-item {
     height: 200px;
+  }
+  .main-stages__item-title {
+    margin-bottom: 30px;
+  }
+  .main-stages__item {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main-stages__item-text {
+    max-width: 500px;
+    width: 100%;
+    display: block;
   }
 }
 @media (max-width: 700px) {

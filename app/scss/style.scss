@@ -427,6 +427,7 @@
   margin: 0 10px;
   margin-top: 220px;
   position: relative;
+
   &::before {
     content: '';
     width: 347px;
@@ -533,6 +534,75 @@
 
 // end section team
 
+
+// start section main-stages
+.main-stages__title {
+  color: $blue;
+  margin-bottom: 50px;
+  // text-align: center;
+  // display: flex;
+  // justify-content: center;
+}
+
+.main-stages__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main-stages__item {
+  width: 440px;
+  // width: 100%;
+  height: 400px;
+  position: relative;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  &:hover {
+    background: linear-gradient(180deg, #fff 100%, rgba(255, 255, 255, 0) 100%);
+    .main-stages__item-text {
+      opacity: 1;
+    }
+    .main-stages__item--number {
+      opacity: 0;
+    }
+  }
+}
+
+
+
+
+.main-stages__item-title {
+  color: $red;
+  // margin-bottom: 50px;
+}
+
+.main-stages__item-text {
+  opacity: 0;
+  transition: all .3s;
+  text-align: center;
+}
+
+.main-stages__item--number {
+  @extend %Oswald-Regular;
+  font-size: 180px;
+  // letter-spacing: -0.01em;
+  // color: #fff;
+  color: transparent;
+  background: linear-gradient(180deg, #fff 0%, hsla(0, 0%, 100%, 0) 100%);
+  background-clip: text;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+// end section main-stages
 
 
 
