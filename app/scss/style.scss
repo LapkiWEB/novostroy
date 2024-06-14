@@ -839,7 +839,93 @@
 
 // end section reviews
 
+// start footer
+.footer {
+  font-size: 16px;
+  color: $dark-blue;
+}
 
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer__item {
+  // margin-bottom: 30px;
+}
+
+.footer__item-1 {
+  max-width: 280px;
+  width: 100%;
+  margin-bottom: 30px;
+  .footer__item-logo {
+    margin-bottom: 20px;
+
+    img {
+      width: 234px;
+      height: 48px;
+    }
+  }
+}
+
+.footer__item-2 {
+  max-width: 210px;
+  width: 100%;
+  .footer__menu-list {
+    margin-bottom: 20px;
+    transition: all .3s;
+    &:hover{
+      color: $red;
+    }
+  }
+}
+
+.footer__item-3 {
+  max-width: 400px;
+  width: 100%;
+
+  .footer__item-text {
+    margin-bottom: 60px;
+  }
+
+  .footer__link {
+    margin-bottom: 20px;
+    transition: all .3s;
+    &:hover{
+      color: $red;
+    }
+  }
+}
+
+.footer__item-4 {
+  max-width: 160px;
+  width: 100%;
+  text-align: right;
+
+  .footer__item-phone {
+    margin-bottom: 20px;
+    transition: all .3s;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .footer__item-email {
+    margin-bottom: 20px;
+    transition: all .3s;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+}
+
+
+
+// end footer
 
 
 
