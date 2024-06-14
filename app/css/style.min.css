@@ -196,6 +196,10 @@ body.menu-opened {
   color: #ffffff;
 }
 
+.section {
+  margin-bottom: 50px;
+}
+
 .global-screen__adv {
   max-width: 460px;
   width: 100%;
