@@ -332,6 +332,10 @@
     height: 500px;
   }
 
+  .reviews__item-title {
+    font-size: 20px;
+  }
+
 }
 
 @media(max-width: 1000px) {
@@ -422,7 +426,7 @@
     display: none;
   }
 
-  .project-map{
+  .project-map {
     display: none;
   }
 }
@@ -534,6 +538,19 @@
     display: block;
   }
 
+  .reviews__wrapper {
+    padding: 0 50px;
+  }
+
+  .reviews__item {
+    margin: 0 15px;
+    padding: 20px;
+  }
+
+  .reviews__item-title {
+    margin-bottom: 20px;
+  }
+
 }
 
 @media(max-width: 700px) {
@@ -577,6 +594,16 @@
   .team__photo-item--4 {
     grid-row-start: span 1;
 
+  }
+
+  .slick-prev {
+    display: none;
+  }
+  .slick-next {
+    display: none;
+  }
+  .reviews__wrapper{
+    padding: 0;
   }
 }
 

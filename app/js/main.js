@@ -10,10 +10,6 @@ window.onscroll = function showHeader() {
 
 $(function () {
 
-
-
-
-
   $('.menu__btn').on('click', (function () {
     if (!$('.nav').hasClass('active')) {
       $('.nav').addClass('active');
@@ -37,7 +33,7 @@ $(function () {
 
   }));
 
-  $(function () {                              
+  $(function () {
 
     $('.questions__item').on('click', (function () {
       $(this).find('.questions__item-title--btn').addClass('active');
@@ -48,7 +44,34 @@ $(function () {
 
     }));
 
-  })  
+
+    $('.reviews__inner').slick({
+      prevArrow: $('.reviews__wrapper .slick-prev'),
+      nextArrow: $('.reviews__wrapper .slick-next'),
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      responsive: [{
+        breakpoint: 1301,
+        settings: {
+          // dotsClass: 'slick-dots',
+          slidesToShow: 1,
+          // arrows: false,
+        }
+      },
+      {
+        breakpoint: 701,
+        settings: {
+          // dotsClass: 'slick-dots',
+          slidesToShow: 1,
+          arrows: false,
+        }
+      }
+      ]
+    });
+
+  })
 
 
 
