@@ -160,7 +160,7 @@
             </a>
           </li>
         </ul>
-        <div class="global-btn header__btn">
+        <div data-modal class="global-btn header__btn">
           Оставить заявку
         </div>
 
@@ -1127,6 +1127,57 @@
         </div>
       </div>
     </footer>
+
+
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="container">
+          <div class="modal__wrapper">
+    
+            <ul data-close class="close__btn">
+              <li class="close__line close__line1"></li>
+              <li class="close__line close__line2"></li>
+            </ul>
+    
+            <h2 class="modal__title title-h2">
+              Оставить заявку
+            </h2>
+    
+            <div class="feedback__inner">
+              <form class="feedback-form">
+                <div class="feedback__wrapper">
+                  <div class="feedback__item">
+                    <div class="feedback__items">
+                      <input type="text" name="name" class="feedback__items-input" placeholder="Ваше имя..." required>
+                    </div>
+                    <div class="feedback__items">
+                      <input type="text" name="name" class="feedback__items-input" placeholder="Ваш телефон или почта..." required>
+                    </div>
+                  </div>
+                  <div class="feedback__item">
+                    <div class="feedback__items">
+                      <textarea class="feedback__items-input feedback__items-textarea" name="text"
+                        placeholder="Ваше сообщение..."></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback__inner-btn">
+                  <button class="feedback__btn global-btn--white global-btn--length">
+                    Отправить
+                  </button>
+                </div>
+              </form>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 
   <script src="js/main.min.js"></script>
