@@ -176,6 +176,7 @@ body.menu-opened {
   max-width: -moz-fit-content;
   max-width: fit-content;
   cursor: pointer;
+  display: block;
 }
 .global-btn:hover {
   background-color: #ffffff;
@@ -195,10 +196,16 @@ body.menu-opened {
   max-width: -moz-fit-content;
   max-width: fit-content;
   cursor: pointer;
+  display: block;
 }
 .global-btn--white:hover {
   background-color: #144c99;
   color: #ffffff;
+}
+
+.global-btn--length {
+  padding: 10px 50px;
+  font-size: 18px;
 }
 
 .section {
@@ -943,8 +950,7 @@ body.menu-opened {
 }
 
 .feedback__btn {
-  padding: 10px 50px;
-  font-size: 18px;
+  margin: 0 auto;
 }
 
 .questions__inner {
@@ -1041,9 +1047,21 @@ body.menu-opened {
 }
 
 .questions__btn {
-  padding: 10px 50px;
-  font-size: 18px;
   margin: 0 auto;
+}
+
+.loans__title {
+  color: rgb(212, 17, 24);
+  margin-bottom: 30px;
+}
+
+.loans__descr {
+  margin-bottom: 50px;
+}
+
+.loans__btn {
+  margin: 0 auto;
+  display: block;
 }
 
 @media (max-width: 1800px) {
@@ -1397,6 +1415,9 @@ body.menu-opened {
   }
 }
 @media (max-width: 800px) {
+  .global-btn--length {
+    font-size: 16px;
+  }
   .section {
     margin: 30px 0;
   }

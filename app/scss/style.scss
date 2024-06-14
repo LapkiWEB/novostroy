@@ -532,6 +532,8 @@
   background-position: top;
 }
 
+
+
 // end section team
 
 
@@ -656,8 +658,7 @@
 }
 
 .feedback__btn {
-  padding: 10px 50px;
-  font-size: 18px;
+  margin: 0 auto;
 }
 
 // end section feedback
@@ -750,15 +751,28 @@
 }
 
 .questions__btn {
-  padding: 10px 50px;
-  font-size: 18px;
   margin: 0 auto;
 }
 
 // end section questions
 
 
+// start section loans
+.main-loans__title {
+  color: $red;
+  margin-bottom: 30px;
+}
 
+.main-loans__descr {
+  margin-bottom: 50px;
+}
+
+.main-loans__btn {
+  margin: 0 auto;
+  display: block;
+}
+
+// end section loans
 
 
 

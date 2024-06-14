@@ -95,6 +95,7 @@ body.menu-opened {
   transition: all .3s;
   max-width: fit-content;
   cursor: pointer;
+  display: block;
 
   &:hover {
     background-color: $white;
@@ -113,6 +114,7 @@ body.menu-opened {
   transition: all .3s;
   max-width: fit-content;
   cursor: pointer;
+  display: block;
 
   &:hover {
     background-color: $blue;
@@ -120,7 +122,12 @@ body.menu-opened {
   }
 }
 
-.section{
+.global-btn--length {
+  padding: 10px 50px;
+  font-size: 18px;
+}
+
+.section {
   margin: 50px 0;
 }
 
