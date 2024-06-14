@@ -633,10 +633,10 @@
   border: 1px solid $white;
   background: rgba(255, 255, 255, 0.1);
   color: $white;
-  padding: 30px 20px;
+  padding: 25px 20px;
   margin-bottom: 35px;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   @extend %Monts-Regular;
 
   &::placeholder {
@@ -646,7 +646,7 @@
 
 .feedback__items-textarea {
   margin-bottom: 0;
-  height: 210px !important;
+  height: 183px !important;
   resize: none;
 }
 
@@ -662,7 +662,100 @@
 
 // end section feedback
 
+// start section questions
+.questions__inner {
+  margin-bottom: 50px;
+}
 
+.questions__item {
+  padding: 30px 60px;
+  max-width: 1274px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  // background: linear-gradient(180deg, #fff 0%, hsla(0, 0%, 100%, 0) 100%);
+  // border: 1px solid $blue;
+  transition: all .3s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.questions__item.main-btn {
+  box-shadow: none;
+  background-color: $white;
+
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(25, 43, 68, 0.5);
+  }
+}
+
+.questions__wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.questions__item-title {
+  display: flex;
+  justify-content: space-between;
+  @extend %Monts-SemiBold;
+  color: $blue;
+
+}
+
+.questions__item-title--text {
+  position: relative;
+
+}
+
+.questions__item-title--btn.active {
+  transition: all .3s;
+
+  .questions__row-1 {
+    transform: rotate(45deg);
+  }
+
+  .questions__row-2 {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+}
+
+.questions__row {
+  height: 3px;
+  width: 25px;
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: all .3s;
+  background-color: $blue;
+}
+
+.questions__row-1 {
+  transform: rotate(90deg);
+  position: relative;
+  top: 12px;
+}
+
+.questions__row-2 {
+  position: relative;
+  top: 10px;
+}
+
+.questions__item-text {
+  padding-top: 25px;
+  display: none;
+}
+
+.questions__text-open {
+  display: block;
+}
+
+.questions__btn {
+  padding: 10px 50px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+// end section questions
 
 
 
