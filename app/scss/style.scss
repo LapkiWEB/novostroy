@@ -357,14 +357,9 @@
 
 }
 
-
-
 .main-portfolio__item {
   position: relative;
   width: 100%;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
   height: 600px;
 }
 
@@ -381,13 +376,11 @@
   z-index: 1;
   width: 45%;
   top: 50%;
-  // left: 25%;
   transform: translate(0, -50%);
 
 }
 
 .main-portfolio__item-content--wrapper {
-
   width: 100%;
   margin-bottom: 30px;
 }
@@ -407,7 +400,6 @@
   width: 60%;
 
   img {
-    // width: 70%;
     width: 100%;
     object-fit: cover;
     height: 600px;
@@ -416,13 +408,9 @@
 
 // end section main-portfolio
 
-
 // start section adv
-.adv{
+.adv {
   padding-bottom: 50px;
-}
-.adv__title {
-  // margin-bottom: 250px;
 }
 
 .adv__inner {
@@ -432,7 +420,7 @@
 }
 
 .adv__item {
-  background: linear-gradient(180deg, #fff 100%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #fff 30%, rgba(255, 255, 255, 0) 100%);
   padding: 30px 25px;
   display: flex;
   flex-wrap: wrap;
@@ -478,6 +466,86 @@
 }
 
 // end section adv
+
+// start section team
+.team {
+  margin-bottom: 30px;
+}
+
+.team__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__content {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.team__content-title {
+  color: $red;
+}
+
+.team__content-text {
+  margin-bottom: 154px;
+}
+
+.team__content-subtitle {
+  color: $red;
+  @extend %Oswald-Regular;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.team__photo {
+  width: 50%;
+  background-color: $dark-grey;
+  padding: 0 20px;
+}
+
+.team__photo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: repeat(14, 140px);
+  // row-gap: 20px;
+  height: 1000px;
+  gap: 20px 20px;
+}
+
+.team__photo-item {
+  // background-color: green;
+  // border: 1px solid #000;
+}
+
+.team__photo-item--1 {
+  grid-row-start: span 9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.team__photo-item--2 {
+  grid-row-start: span 10;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.team__photo-item--3 {
+  grid-row-start: span 10;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.team__photo-item--4 {
+  grid-row-start: span 9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+// end section team
 
 
 

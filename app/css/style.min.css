@@ -5,7 +5,7 @@ body {
   font-weight: normal;
 }
 
-.title-h4, .title-h3, .title-h2, .title-h1 {
+.team__content-subtitle, .title-h4, .title-h3, .title-h2, .title-h1 {
   font-family: "Oswald-Regular", sans-serif;
   font-weight: normal;
 }
@@ -662,8 +662,8 @@ body.menu-opened {
 }
 
 .adv__item {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fff), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #fff 100%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #fff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #fff 30%, rgba(255, 255, 255, 0) 100%);
   padding: 30px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -714,6 +714,81 @@ body.menu-opened {
 .adv__item-title {
   color: rgb(212, 17, 24);
   margin-bottom: 40px;
+}
+
+.team {
+  margin-bottom: 30px;
+}
+
+.team__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team__content {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.team__content-title {
+  color: rgb(212, 17, 24);
+}
+
+.team__content-text {
+  margin-bottom: 154px;
+}
+
+.team__content-subtitle {
+  color: rgb(212, 17, 24);
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.team__photo {
+  width: 50%;
+  background-color: #747C87;
+  padding: 0 20px;
+}
+
+.team__photo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  height: 1000px;
+  gap: 20px 20px;
+}
+
+.team__photo-item--1 {
+  grid-row-start: span 9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.team__photo-item--2 {
+  grid-row-start: span 10;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.team__photo-item--3 {
+  grid-row-start: span 10;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.team__photo-item--4 {
+  grid-row-start: span 9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 @media (max-width: 1800px) {
@@ -893,6 +968,17 @@ body.menu-opened {
   .main-portfolio__item-img img {
     height: 400px;
   }
+  .team__photo {
+    height: 800px;
+    padding: 0 15px;
+    gap: 15px;
+  }
+  .team__content-text {
+    margin-bottom: 30px;
+  }
+  .team__content-subtitle {
+    font-size: 24px;
+  }
 }
 @media (max-width: 1100px) {
   html,
@@ -965,6 +1051,17 @@ body.menu-opened {
     width: 62px;
     height: 63px;
   }
+  .team__content-subtitle {
+    font-size: 20px;
+  }
+  .team__photo {
+    height: 700px;
+    gap: 10px;
+    padding: 0 10px;
+  }
+  .team__content {
+    padding-right: 15px;
+  }
 }
 @media (max-width: 850px) {
   .container {
@@ -1022,6 +1119,51 @@ body.menu-opened {
   }
   .adv__item-title {
     margin-bottom: 30px;
+  }
+  .team__content {
+    width: 60%;
+  }
+  .team__photo {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    width: 30%;
+    height: auto;
+  }
+  .team__photo-item {
+    height: 200px;
+  }
+}
+@media (max-width: 700px) {
+  .team__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team__content {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  .team__photo {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .team__photo-item {
+    height: 300px;
+  }
+  .team__photo-item--1 {
+    grid-row-start: span 1;
+  }
+  .team__photo-item--2 {
+    grid-row-start: span 1;
+  }
+  .team__photo-item--3 {
+    grid-row-start: span 1;
+  }
+  .team__photo-item--4 {
+    grid-row-start: span 1;
   }
 }
 @media (max-width: 600px) {
@@ -1089,5 +1231,17 @@ body.menu-opened {
   }
   .adv__item {
     padding: 30px 15px 20px;
+  }
+  .team__photo-item {
+    height: 250px;
+  }
+}
+@media (max-width: 450px) {
+  .team__photo {
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .team__photo-item {
+    height: 200px;
   }
 }
