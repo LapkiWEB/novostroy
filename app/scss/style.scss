@@ -371,6 +371,7 @@
   z-index: 1;
   width: 45%;
   top: 50%;
+  border-radius: 3px;
   transform: translate(0, -50%);
 
 }
@@ -394,7 +395,9 @@
   right: 0;
   width: 60%;
 
+
   img {
+    border-radius: 3px;
     width: 100%;
     object-fit: cover;
     height: 600px;
@@ -427,6 +430,7 @@
   margin: 0 10px;
   margin-top: 220px;
   position: relative;
+  border-radius: 3px;
 
   &::before {
     content: '';
@@ -491,17 +495,21 @@
   margin-bottom: 50px;
 }
 
-.team__photo {
-  width: 50%;
-  background-color: $dark-grey;
-  padding: 0 20px;
-}
+
 
 .team__photo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 1000px;
   gap: 20px 20px;
+  width: 50%;
+  background-color: $dark-grey;
+  padding: 0 20px;
+
+}
+
+.team__photo-item {
+  border-radius: 3px;
 }
 
 .team__photo-item--1 {
@@ -509,6 +517,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+
 }
 
 .team__photo-item--2 {
@@ -562,6 +571,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+  border-radius: 3px;
 
   &:hover {
     background: linear-gradient(180deg, #fff 100%, rgba(255, 255, 255, 0) 100%);
@@ -640,6 +650,7 @@
   width: 100%;
   font-size: 18px;
   @extend %Monts-Regular;
+  border-radius: 3px;
 
   &::placeholder {
     color: $white;
@@ -674,8 +685,6 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
-  // background: linear-gradient(180deg, #fff 0%, hsla(0, 0%, 100%, 0) 100%);
-  // border: 1px solid $blue;
   transition: all .3s;
   border-radius: 3px;
   cursor: pointer;
@@ -774,7 +783,25 @@
 
 // end section loans
 
-
+// start section project-map
+.project-map{
+  background-color: $dark-grey;
+}
+.project-map__title{
+  color: $white;
+  margin-bottom: 30px;
+}
+.project-map__btn{
+  margin: 0 auto;
+}
+.project-map__bg{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 884px;
+  margin-bottom: 50px;
+}
+// end section project-map
 
 
 
