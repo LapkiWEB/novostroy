@@ -60,12 +60,14 @@ body.menu-opened {
   @extend %Oswald-Regular;
   font-size: 80px;
   // line-height: 49px;
+
   // padding: 0px 35px;
   // border-bottom: 2px solid $blue;
   // text-align: center;
   // margin: 0 auto;
   // margin-bottom: 56px;
   // max-width: fit-content;
+  // letter-spacing: -1px;
 }
 
 .title-h2 {
@@ -230,7 +232,7 @@ body.menu-opened {
 
 .modal {
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   top: 0;
   width: 100%;
   height: 100%;
@@ -296,5 +298,49 @@ body.menu-opened {
 }
 
 .hide {
+  display: none;
+}
+
+
+.breadcrumbs {
+  // margin-bottom: 30px;
+  // margin-top: 30px;
+  padding-top: 30px;
+}
+
+.breadcrumbs__list-item {
+  display: inline-block;
+  padding-right: 18px;
+  margin-right: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  // text-transform: uppercase;
+  position: relative;
+  // @extend %Arsenal-Regular;
+  // color: $grey;
+
+  &::after {
+    position: absolute;
+    content: '>';
+    right: 2px;
+    top: 0px;
+    // background-image: url('../images/icons/breadcrumbs.svg');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    // width: 10px;
+    // height: 8px;
+  }
+
+  a {
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      // color: $light-grey;
+    }
+  }
+}
+
+.breadcrumbs__list-item:last-child::after {
   display: none;
 }

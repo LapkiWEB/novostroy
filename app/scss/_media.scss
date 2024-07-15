@@ -132,6 +132,10 @@
   .project-map__bg {
     height: 730px;
   }
+
+  .secondary-onescreen {
+    padding-top: 68px;
+  }
 }
 
 @media(max-width: 1500px) {
@@ -364,6 +368,11 @@
     font-size: 20px;
   }
 
+  .secondary-onescreen {
+    padding-top: 62px;
+    min-height: 550px;
+  }
+
 }
 
 @media(max-width: 1000px) {
@@ -495,7 +504,8 @@
     height: auto;
   }
 
-  .main-onescreen__body {
+  .main-onescreen__body,
+  .secondary-onescreen__body {
     width: 100%;
   }
 
@@ -581,6 +591,10 @@
 
   .footer__item-4 {
     margin-left: 0;
+  }
+  .breadcrumbs{
+    margin-bottom: 10px;
+    padding-top: 20px;
   }
 }
 
@@ -698,9 +712,11 @@
     text-align: center;
   }
 
-  .main-onescreen-btn {
+  .main-onescreen-btn,
+  .secondary-onescreen-btn {
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .global-screen__list {

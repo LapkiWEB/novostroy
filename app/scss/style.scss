@@ -265,8 +265,9 @@
 }
 
 .main-onescreen-title {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: $red;
+
 }
 
 .main-onescreen__images {
@@ -859,6 +860,7 @@
   max-width: 280px;
   width: 100%;
   margin-bottom: 30px;
+
   .footer__item-logo {
     margin-bottom: 20px;
 
@@ -872,10 +874,12 @@
 .footer__item-2 {
   max-width: 210px;
   width: 100%;
+
   .footer__menu-list {
     margin-bottom: 20px;
     transition: all .3s;
-    &:hover{
+
+    &:hover {
       color: $red;
     }
   }
@@ -892,7 +896,8 @@
   .footer__link {
     margin-bottom: 20px;
     transition: all .3s;
-    &:hover{
+
+    &:hover {
       color: $red;
     }
   }
@@ -927,7 +932,63 @@
 
 // end footer
 
+// start str freame
+.secondary-onescreen {
+  // height: 94vh;
+  min-height: 700px;
+  overflow: hidden;
+  padding-top: 89px;
+}
 
+@media (min-width: 800px) {
+  .secondary-onescreen {
+    display: flex;
+  }
+}
+
+.secondary-onescreen__content {
+  flex: 0 0 100%;
+  z-index: 2;
+}
+
+.secondary-onescreen__body {
+  width: 50%;
+}
+
+.secondary-onescreen-title {
+  margin-bottom: 40px;
+  color: $red;
+  line-height: 125%;
+}
+
+.secondary-onescreen__images {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 800px) {
+  .secondary-onescreen__images {
+    position: relative;
+    flex: 0 0 50%;
+    transform: translate(-100%, 0px);
+  }
+
+  .secondary-onescreen__img {
+    position: absolute;
+    width: 100%;
+    // height: 40vw;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    padding-left: 30px;
+  }
+}
+.secondary-onescreen-btn{
+  margin-bottom: 30px;
+}
+
+// end str freame
 
 
 
