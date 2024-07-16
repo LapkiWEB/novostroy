@@ -1644,6 +1644,15 @@ body.menu-opened {
   color: rgb(212, 17, 24);
 }
 
+.myths__title {
+  color: rgb(212, 17, 24);
+  margin-bottom: 30px;
+}
+
+.myths__text {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 1800px) {
   .nav {
     display: none;

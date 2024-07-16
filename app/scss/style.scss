@@ -1109,7 +1109,15 @@
 
 // end section stages
 
-
+// start section myths
+.myths__title{
+  color: $red;
+  margin-bottom: 30px;
+}
+.myths__text{
+  margin-bottom: 50px;
+}
+// end section myths
 
 
 @import 'media';
