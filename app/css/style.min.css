@@ -1518,6 +1518,69 @@ body.menu-opened {
   margin-bottom: 30px;
 }
 
+.frame-about {
+  color: #ffffff;
+  background-color: #747C87;
+}
+
+.present {
+  color: #ffffff;
+  background-color: #747C87;
+  min-height: 650px;
+}
+
+@media (min-width: 900px) {
+  .present {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.present-text {
+  margin-bottom: 50px;
+}
+
+.present__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  z-index: 2;
+}
+
+.present__body {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.present-title {
+  margin-bottom: 40px;
+}
+
+.present__images {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .present__images {
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-transform: translate(-100%, 0px);
+        -ms-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+  }
+  .present__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 @media (max-width: 1800px) {
   .nav {
     display: none;
@@ -1635,6 +1698,9 @@ body.menu-opened {
   .secondary-onescreen {
     padding-top: 68px;
   }
+  .present {
+    min-height: 550px;
+  }
 }
 @media (max-width: 1500px) {
   .main-stages__inner {
@@ -1706,6 +1772,10 @@ body.menu-opened {
   }
   .project-map__bg {
     height: 600px;
+  }
+  .present__img {
+    -o-object-fit: inherit;
+       object-fit: inherit;
   }
 }
 @media (max-width: 1200px) {
@@ -1829,6 +1899,9 @@ body.menu-opened {
     padding-top: 62px;
     min-height: 550px;
   }
+  .present {
+    min-height: 450px;
+  }
 }
 @media (max-width: 1000px) {
   .adv__item-title {
@@ -1904,6 +1977,16 @@ body.menu-opened {
   }
   .project-map {
     display: none;
+  }
+  .present__body {
+    width: 100%;
+    padding-right: 0;
+  }
+  .present__img {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
   }
 }
 @media (max-width: 850px) {
@@ -2078,6 +2161,9 @@ body.menu-opened {
             order: 3;
     text-align: left;
   }
+  .present__img {
+    height: 400px;
+  }
 }
 @media (max-width: 600px) {
   .container {
@@ -2132,6 +2218,9 @@ body.menu-opened {
   }
   .feedback__title {
     margin-bottom: 20px;
+  }
+  .present__img {
+    height: 300px;
   }
 }
 @media (max-width: 500px) {

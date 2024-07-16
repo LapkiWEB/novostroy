@@ -932,9 +932,8 @@
 
 // end footer
 
-// start str freame
+// start secondary
 .secondary-onescreen {
-  // height: 94vh;
   min-height: 700px;
   overflow: hidden;
   padding-top: 89px;
@@ -976,7 +975,6 @@
   .secondary-onescreen__img {
     position: absolute;
     width: 100%;
-    // height: 40vw;
     height: 100%;
     bottom: 0;
     left: 0;
@@ -984,11 +982,79 @@
     padding-left: 30px;
   }
 }
-.secondary-onescreen-btn{
+
+.secondary-onescreen-btn {
   margin-bottom: 30px;
 }
 
-// end str freame
+
+// end secondary
+
+// start frame
+.frame-about {
+  color: $white;
+  background-color: $dark-grey;
+}
+
+// end frame
+
+// start section present
+.present {
+  color: $white;
+  background-color: $dark-grey;
+  min-height: 650px;
+}
+@media (min-width: 900px) {
+  .present {
+    display: flex;
+  }
+}
+
+.present-text {
+  margin-bottom: 50px;
+}
+
+
+
+
+.present__content {
+  flex: 0 0 100%;
+  z-index: 2;
+}
+
+.present__body {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.present-title {
+  margin-bottom: 40px;
+}
+
+.present__images {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .present__images {
+    position: relative;
+    flex: 0 0 50%;
+    transform: translate(-100%, 0px);
+    // padding-left: 30px;
+  }
+
+  .present__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    // padding-left: 30px;
+  }
+}
+// end section present
 
 
 
