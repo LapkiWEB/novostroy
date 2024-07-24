@@ -1208,4 +1208,47 @@
 }
 
 // end section other-projects
+
+// start section offer
+.offer__title{
+  color:$red;
+}
+
+.offer__item {
+  padding: 30px 60px;
+  max-width: 626px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  transition: all .3s;
+  border-radius: 3px;
+  cursor: pointer;
+  color: $blue;
+  @extend %Monts-SemiBold;
+  text-align: center;
+  display: block;
+}
+
+.offer__item.main-btn {
+  box-shadow: none;
+  background-color: $white;
+
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(25, 43, 68, 0.5);
+  }
+}
+
+// .offer__wrapper {
+//   position: relative;
+//   z-index: 10;
+// }
+
+// .offer__item-title {
+//   display: flex;
+//   justify-content: space-between;
+//   @extend %Monts-SemiBold;
+//   color: $blue;
+
+// }
+// end section offer
 @import 'media';
