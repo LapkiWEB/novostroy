@@ -1698,6 +1698,56 @@ body.menu-opened {
   width: 100%;
 }
 
+.other-projects__title {
+  color: rgb(212, 17, 24);
+}
+
+.other-projects__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.other-projects__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.other-projects__item-box {
+  background: rgba(25, 43, 68, 0.5);
+  height: 100%;
+  padding: 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+.other-projects__item-box:hover {
+  background: rgba(25, 43, 68, 0);
+}
+.other-projects__item-box:hover .other-projects__subtitle {
+  color: rgb(25, 43, 68);
+}
+
+.other-projects__subtitle {
+  color: #ffffff;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 @media (max-width: 1800px) {
   .nav {
     display: none;
@@ -1925,6 +1975,9 @@ body.menu-opened {
   .standard-projects__item {
     height: 50vh;
   }
+  .other-projects__item {
+    height: 40vh;
+  }
 }
 @media (max-width: 1200px) {
   .main-services__item {
@@ -2116,6 +2169,15 @@ body.menu-opened {
   .standard-projects__item {
     height: 40vh;
   }
+  .other-projects__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .other-projects__item {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 900px) {
   .main-stages__item-title {
@@ -2286,6 +2348,21 @@ body.menu-opened {
   .standard-projects__btn {
     margin: 0 auto;
   }
+  .other-projects__item-box:hover {
+    background: rgba(25, 43, 68, 0.5);
+  }
+  .other-projects__item-box:hover .other-projects__subtitle {
+    color: #ffffff;
+  }
+  .other-projects__item {
+    width: 100%;
+  }
+  .other-projects__item-box {
+    padding: 20px;
+  }
+  .other-projects__btn {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 700px) {
   .team__wrapper {
@@ -2434,6 +2511,9 @@ body.menu-opened {
   }
   .team__photo-item {
     height: 250px;
+  }
+  .other-projects__item {
+    height: 30vh;
   }
 }
 @media (max-width: 450px) {

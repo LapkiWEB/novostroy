@@ -270,6 +270,10 @@
   .standard-projects__item {
     height: 50vh;
   }
+
+  .other-projects__item {
+    height: 40vh;
+  }
 }
 
 @media(max-width: 1200px) {
@@ -507,6 +511,16 @@
   .standard-projects__item {
     height: 40vh;
   }
+
+  .other-projects__inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .other-projects__item {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media(max-width: 900px) {
@@ -712,6 +726,27 @@
     margin: 0 auto;
   }
 
+  .other-projects__item-box {
+    &:hover {
+      background: rgba(25, 43, 68, 0.5);
+      .other-projects__subtitle {
+        color: $white;
+      }
+    }
+  }
+
+  .other-projects__item {
+    width: 100%;
+  }
+
+  .other-projects__item-box {
+    padding: 20px;
+  }
+
+  .other-projects__btn {
+    margin: 0 auto;
+  }
+
 
 }
 
@@ -914,6 +949,10 @@
 
   .team__photo-item {
     height: 250px;
+  }
+
+  .other-projects__item {
+    height: 30vh;
   }
 }
 

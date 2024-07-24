@@ -1156,12 +1156,56 @@
 
 .standard-projects__subtitle {
   color: $white;
-  // margin-right: auto;
-  // width: fit-content;
   width: 100%;
-  // margin-right: 100%;
 }
 
 // end section standard-projects
 
+// start section other-projects
+.other-projects__title {
+  color: $red;
+}
+
+.other-projects__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.other-projects__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // width: 50%;
+  height: 50vh;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.other-projects__item-box {
+  background: rgba(25, 43, 68, 0.5);
+  height: 100%;
+  padding: 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  transition: all .3s;
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(25, 43, 68, 0.0);
+
+    .other-projects__subtitle {
+      color: $dark-blue;
+    }
+  }
+}
+
+.other-projects__subtitle {
+  color: $white;
+  width: 100%;
+  transition: all .3s;
+}
+
+// end section other-projects
 @import 'media';
