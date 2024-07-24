@@ -1653,6 +1653,51 @@ body.menu-opened {
   margin-bottom: 50px;
 }
 
+.standard-projects__title {
+  color: #144c99;
+}
+
+.standard-projects__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.standard-projects__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 70vh;
+  cursor: pointer;
+}
+
+.standard-projects__item-box {
+  background: rgba(25, 43, 68, 0.5);
+  height: 100%;
+  padding: 30px 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.standard-projects__item-box:hover {
+  background: rgba(25, 43, 68, 0.2);
+}
+
+.standard-projects__subtitle {
+  color: #ffffff;
+  width: 100%;
+}
+
 @media (max-width: 1800px) {
   .nav {
     display: none;
@@ -1795,6 +1840,9 @@ body.menu-opened {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .standard-projects__item {
+    height: 60vh;
+  }
 }
 @media (max-width: 1500px) {
   .main-stages__inner {
@@ -1870,6 +1918,12 @@ body.menu-opened {
   .present__img {
     -o-object-fit: inherit;
        object-fit: inherit;
+  }
+  .standard-projects__item-box {
+    padding: 30px 80px;
+  }
+  .standard-projects__item {
+    height: 50vh;
   }
 }
 @media (max-width: 1200px) {
@@ -2056,6 +2110,12 @@ body.menu-opened {
   .questions__item {
     padding: 30px 30px;
   }
+  .standard-projects__item-box {
+    padding: 30px 50px;
+  }
+  .standard-projects__item {
+    height: 40vh;
+  }
 }
 @media (max-width: 900px) {
   .main-stages__item-title {
@@ -2213,6 +2273,19 @@ body.menu-opened {
     width: 100%;
     min-height: 300px;
   }
+  .standard-projects__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .standard-projects__item {
+    width: 100%;
+  }
+  .standard-projects__item-box:hover {
+    background: rgba(25, 43, 68, 0.5);
+  }
+  .standard-projects__btn {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 700px) {
   .team__wrapper {
@@ -2338,6 +2411,9 @@ body.menu-opened {
   }
   .present__img {
     height: 300px;
+  }
+  .standard-projects__item-box {
+    padding: 20px;
   }
 }
 @media (max-width: 500px) {

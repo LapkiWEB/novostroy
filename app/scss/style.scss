@@ -1110,14 +1110,58 @@
 // end section stages
 
 // start section myths
-.myths__title{
+.myths__title {
   color: $red;
   margin-bottom: 30px;
 }
-.myths__text{
+
+.myths__text {
   margin-bottom: 50px;
 }
+
 // end section myths
 
+// start section standard-projects
+.standard-projects__title {
+  color: $blue;
+}
+
+.standard-projects__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.standard-projects__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 70vh;
+  cursor: pointer;
+}
+
+.standard-projects__item-box {
+  background: rgba(25, 43, 68, 0.5);
+  height: 100%;
+  padding: 30px 96px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  transition: all .3s;
+
+  &:hover {
+    background: rgba(25, 43, 68, 0.2);
+  }
+}
+
+.standard-projects__subtitle {
+  color: $white;
+  // margin-right: auto;
+  // width: fit-content;
+  width: 100%;
+  // margin-right: 100%;
+}
+
+// end section standard-projects
 
 @import 'media';
