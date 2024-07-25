@@ -324,20 +324,9 @@ body.menu-opened {
     content: '>';
     right: 2px;
     top: 0px;
-    // background-image: url('../images/icons/breadcrumbs.svg');
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-    // width: 10px;
-    // height: 8px;
   }
-
   a {
     transition: all 250ms ease-in-out;
-
-    &:hover {
-      // color: $light-grey;
-    }
   }
 }
 

@@ -203,6 +203,15 @@
   .main-portfolio__item-img img {
     height: 500px;
   }
+
+  .product1-img {
+    width: 502px;
+    height: 526px;
+  }
+
+  .slider-for.slick-initialized.slick-slider {
+    width: 502px !important;
+  }
 }
 
 @media(max-width: 1300px) {
@@ -274,6 +283,11 @@
   .other-projects__item {
     height: 40vh;
   }
+
+  .product2-img {
+    max-width: 245px;
+    height: 170px;
+  }
 }
 
 @media(max-width: 1200px) {
@@ -333,6 +347,34 @@
     order: 2;
     margin-left: 150px;
     // padding-left: 100px;
+  }
+
+  .product__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .product__box {
+    order: -1;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .product__inner {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product1-img {
+    max-width: 800px;
+    width: 100%;
+
+  }
+
+  .slider-for.slick-initialized.slick-slider {
+    max-width: 800px;
+    width: 100% !important;
+    margin: 0 auto;
   }
 }
 
@@ -433,11 +475,6 @@
     margin-bottom: 30px;
   }
 
-  .stages__img {
-    // min-height: 310px;
-    // min-height: 100%;
-    // height: 100%;
-  }
 }
 
 @media(max-width: 1000px) {
@@ -521,6 +558,39 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  .slider-nav__wrapper {
+    .arrow__wrapper {
+      img {
+        width: 24px;
+        height: 46px;
+      }
+    }
+
+    .slick-prev {
+      left: 0px;
+
+    }
+
+    .slick-next {
+      right: 0px;
+    }
+  }
+
+  .galleryprojects__item {
+    margin-bottom: 100px;
+  }
+
+  .projecttemplate-onescreen__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .projecttemplate-onescreen__item-img {
+    margin: 0 auto;
+    width: 90%;
+    height: 53vw;
+    object-fit: cover;
+  }
 }
 
 @media(max-width: 900px) {
@@ -560,6 +630,25 @@
     object-fit: cover;
     width: 100%;
   }
+
+  .product__inner {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product1-img {
+    max-width: 601px;
+    width: 100%;
+    height: 416px;
+  }
+
+
+  .slider-for.slick-initialized.slick-slider {
+    max-width: 601px;
+  }
+
+
 }
 
 @media(max-width: 850px) {
@@ -729,6 +818,7 @@
   .other-projects__item-box {
     &:hover {
       background: rgba(25, 43, 68, 0.5);
+
       .other-projects__subtitle {
         color: $white;
       }
@@ -747,6 +837,10 @@
     margin: 0 auto;
   }
 
+  .product2-img {
+    max-width: 200px;
+    height: 140px;
+  }
 
 }
 
@@ -826,6 +920,16 @@
 
   .present__img {
     height: 400px;
+  }
+
+  .product2-img {
+    max-width: 180px;
+    height: 110px;
+  }
+
+  .projecttemplate-onescreen__item-img {
+    width: 100%;
+    height: 56vw;
   }
 }
 
@@ -924,6 +1028,49 @@
   .standard-projects__item-box {
     padding: 20px;
   }
+
+  .slider-nav__wrapper {
+    padding: 0;
+
+    .slick-arrow,
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  }
+
+  .product1-img {
+    max-width: 396px;
+    width: 100%;
+    height: 275px;
+  }
+
+
+  .slider-for.slick-initialized.slick-slider {
+    max-width: 396px;
+
+  }
+
+  .product__item {
+    margin-bottom: 50px;
+  }
+
+  // .product__box-title {
+  //   font-size: 20px;
+  // }
+
+  // .banner__title {
+  //   font-size: 40px;
+  // }
+
+  // .banner__subtitle {
+  //   font-size: 20px;
+  // }
+  .projecttemplate-onescreen__item-img {
+    width: 100%;
+    height: 65vw;
+  }
+
 }
 
 @media(max-width: 500px) {
@@ -954,6 +1101,16 @@
   .other-projects__item {
     height: 30vh;
   }
+
+  .product2-img {
+    max-width: 180px;
+    height: 140px;
+  }
+
+  .projecttemplate-onescreen__item-img {
+    width: 100%;
+    height: 62vw;
+  }
 }
 
 
@@ -965,5 +1122,39 @@
 
   .team__photo-item {
     height: 200px;
+  }
+
+  .product2-img {
+    max-width: 140px;
+    height: 100px;
+  }
+
+  .galleryprojects__wrapper--margin {
+    flex-wrap: wrap;
+    // text-align: center;
+    justify-content: center !important;
+    width: 100%;
+
+    .galleryprojects__link {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 30px;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    .galleryprojects__btn{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .galleryprojects__wrapper {
+    justify-content: space-between;
+  }
+
+  .galleryprojects__link {
+    margin-right: 15px;
   }
 }
