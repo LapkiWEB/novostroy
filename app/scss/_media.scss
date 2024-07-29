@@ -1071,6 +1071,13 @@
     height: 65vw;
   }
 
+  .buy {
+    bottom: 25px;
+    right: -120px;
+    font-size: 18px;
+  }
+
+
 }
 
 @media(max-width: 500px) {
@@ -1142,7 +1149,8 @@
       margin-right: 50px;
       margin-left: 50px;
     }
-    .galleryprojects__btn{
+
+    .galleryprojects__btn {
       display: block;
       margin: 0 auto;
     }

@@ -109,7 +109,7 @@ body {
   font-weight: normal;
 }
 
-.product__text-number, .product__text-extra, .offer__item, .reviews__item-title, .questions__item-title {
+.buy, .product__text-number, .product__text-extra, .offer__item, .reviews__item-title, .questions__item-title {
   font-family: "Montserrat-SemiBold", sans-serif;
   font-weight: normal;
 }
@@ -1970,6 +1970,25 @@ body.menu-opened {
   margin-top: 50px;
 }
 
+.slider-for {
+  position: relative;
+}
+
+.buy {
+  position: absolute;
+  width: 400px;
+  background-color: rgb(212, 17, 24);
+  bottom: 35px;
+  right: -80px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 3px 0;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
 @media (max-width: 1800px) {
   .nav {
     display: none;
@@ -2821,6 +2840,11 @@ body.menu-opened {
   .projecttemplate-onescreen__item-img {
     width: 100%;
     height: 65vw;
+  }
+  .buy {
+    bottom: 25px;
+    right: -120px;
+    font-size: 18px;
   }
 }
 @media (max-width: 500px) {

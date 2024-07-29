@@ -781,9 +781,11 @@
   margin: 0 auto;
   display: block;
 }
-.main-loans__title--blue{
-  color:$blue;
+
+.main-loans__title--blue {
+  color: $blue;
 }
+
 // end section loans
 
 // start section project-map
@@ -1391,32 +1393,61 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.projecttemplate-onescreen__item{
+
+.projecttemplate-onescreen__item {
   width: 100%;
- 
+
 }
-.projecttemplate-onescreen__item-img{
+
+.projecttemplate-onescreen__item-img {
   width: 760px;
   height: 28vw;
   object-fit: cover;
 }
+
 @media (min-width: 1920px) {
   .projecttemplate-onescreen__item-img {
     height: 540px;
   }
 }
+
 // end section projecttemplate
 
 // start section housefacade
-.housefacade__title{
+.housefacade__title {
   color: $red;
 }
-.housefacade__descr{
+
+.housefacade__descr {
   margin-bottom: 30px;
 }
 
-.galleryprojects__wrapper--margin{
+.galleryprojects__wrapper--margin {
   margin-top: 50px;
 }
+
 // end section housefacade
+
+
+// .product1-img {
+//   position: relative;
+// }
+.slider-for {
+  position: relative;
+}
+
+.buy {
+  position: absolute;
+  width: 400px;
+  background-color: $red;
+  bottom: 35px;
+  right: -80px;
+  text-align: center;
+  @extend %Monts-SemiBold;
+  font-size: 24px;
+  color: $white;
+  padding: 3px 0;
+  transform: rotate(-20deg);
+}
+
 @import 'media';
