@@ -171,6 +171,7 @@ $(function () {
   lightGallery(document.querySelector('.photo-house'));
   lightGallery(document.querySelector('.facade'));
   lightGallery(document.querySelector('.floor'));
+  lightGallery(document.querySelector('.interior'));
 
 
 
