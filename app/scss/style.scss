@@ -1454,4 +1454,13 @@
   transform: rotate(-20deg);
 }
 
+.error__title{
+  color: $red;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.error__btn{
+  display: block;
+  margin: 0 auto;
+}
 @import 'media';
