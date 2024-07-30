@@ -2008,6 +2008,19 @@ body.menu-opened {
   margin: 0 auto;
 }
 
+.politics__title-h1 {
+  color: rgb(212, 17, 24);
+  margin-bottom: 50px;
+}
+
+.politics__title-h4 {
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1800px) {
   .nav {
     display: none;

@@ -243,7 +243,7 @@
 
 
 // start section main-onescreen
-.main-onescreen{
+.main-onescreen {
   height: 94vh;
   overflow: hidden;
   padding-top: 168px;
@@ -938,11 +938,13 @@
   overflow: hidden;
   padding-top: 89px;
 }
+
 .kompani-onescreen {
   padding-top: 89px;
   height: fit-content;
   margin-bottom: 50px;
 }
+
 @media (min-width: 800px) {
   .secondary-onescreen {
     display: flex;
@@ -1454,13 +1456,30 @@
   transform: rotate(-20deg);
 }
 
-.error__title{
+.error__title {
   color: $red;
   text-align: center;
   margin-bottom: 30px;
 }
-.error__btn{
+
+.error__btn {
   display: block;
   margin: 0 auto;
 }
+.politics__title-h1{
+  color: $red;
+  margin-bottom: 50px;
+}
+.politics__title-h4 {
+  margin-bottom: 30px;
+}
+.text{
+  margin-bottom: 30px;
+}
+
 @import 'media';
+
+
+// <div class="title-h4"></div>
+// <p class="text"></p>
+// <br>
