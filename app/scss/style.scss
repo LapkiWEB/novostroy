@@ -243,7 +243,7 @@
 
 
 // start section main-onescreen
-.main-onescreen {
+.main-onescreen{
   height: 94vh;
   overflow: hidden;
   padding-top: 168px;
@@ -938,7 +938,11 @@
   overflow: hidden;
   padding-top: 89px;
 }
-
+.kompani-onescreen {
+  padding-top: 89px;
+  height: fit-content;
+  margin-bottom: 50px;
+}
 @media (min-width: 800px) {
   .secondary-onescreen {
     display: flex;

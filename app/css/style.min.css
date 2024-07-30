@@ -1469,6 +1469,14 @@ body.menu-opened {
   padding-top: 89px;
 }
 
+.kompani-onescreen {
+  padding-top: 89px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 50px;
+}
+
 @media (min-width: 800px) {
   .secondary-onescreen {
     display: -webkit-box;
