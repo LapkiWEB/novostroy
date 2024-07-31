@@ -1477,9 +1477,34 @@
   margin-bottom: 30px;
 }
 
+// start section contacts 
+.contacts__title{
+  color: $red;
+}
+.contacts__inner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.contacts__item{
+  width: 50%;
+}
+.contacts__phone,
+.contacts__mail{
+  display: block;
+  margin-bottom: 30px;
+}
+.contacts__map{
+  text-align: center;
+  iframe{
+    width: 100%;
+    height: 300px;
+  }
+}
+// end section contacts 
+
+
+
 @import 'media';
 
 
-// <div class="title-h4"></div>
-// <p class="text"></p>
-// <br>
